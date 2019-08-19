@@ -4,13 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 /*
-请输入节点数
-5
-请输入起点下标
-0
-请输入边数
-8
-请输入具体的边的数据
+5 0 8
 0 1 -1
 0 2 4
 1 2 3
@@ -68,13 +62,9 @@ public class SPFA {
 
     public static void createGraph(){
         Scanner scan = new Scanner(System.in);
-        System.out.println("请输入节点数");
         int n = scan.nextInt();
-        System.out.println("请输入起点下标");
         int s = scan.nextInt();
-        System.out.println("请输入边数");
         int m = scan.nextInt();
-        System.out.println("请输入具体的边的数据");
         result = new int[n];
         num = new int[n];
         edge = new Edge[m];

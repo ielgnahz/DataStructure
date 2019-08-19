@@ -3,12 +3,8 @@ package sdu.edu.Algorithm;
 import java.util.Scanner;
 /*
  *
-编号从１开始(有向图)
-请输入节点数
 6
-请输入边数
 8
-请输入边的详细信息
 0 2 10
 0 4 30
 0 5 100
@@ -26,9 +22,7 @@ v0-->v4-->v3-->v5=60
 
 请输入节点数(无向图)
 9
-请输入边数
 15
-请输入边的详细信息
 0 1 1
 0 2 5
 1 2 3
@@ -87,10 +81,6 @@ public class Dijsktra {
             int z = scan.nextInt();
             matrix[x][y] = z;
             matrix[y][x] = z;
-        }
-
-        for(int i = 0; i < n;i++){
-            mindist[i] = Integer.MAX_VALUE;
         }
     }
 

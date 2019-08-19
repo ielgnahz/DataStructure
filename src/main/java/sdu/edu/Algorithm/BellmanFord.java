@@ -14,6 +14,11 @@ import java.util.Scanner;
 4 2 -3
 4 3 9
 
+v0-->v0=0
+v0-->v4-->v2-->v1=2
+v0-->v4-->v2=4
+v0-->v4-->v2-->v1-->v3=-2
+v0-->v4=7
  */
 public class BellmanFord {
 

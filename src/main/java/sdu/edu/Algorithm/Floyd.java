@@ -9,20 +9,20 @@ public class Floyd {
      *
      */
     /*
-    8 13
-    1 2 12
-    1 4 16
-    1 7 14
-    2 3 10
-    2 4 7
-    3 6 3
-    3 8 5
-    3 4 6
-    6 8 4
-    5 8 1
-    5 4 1
-    8 7 8
-    4 7 9
+8 13
+1 2 12
+1 4 16
+1 7 14
+2 3 10
+2 4 7
+3 6 3
+3 8 5
+3 4 6
+6 8 4
+5 8 1
+5 4 1
+8 7 8
+4 7 9
      */
 
     static int[][] d;
@@ -63,9 +63,6 @@ public class Floyd {
                 for(int j = 1;j < len;j++){
                     int select = d[i][k] == Integer.MAX_VALUE || d[k][j] == Integer.MAX_VALUE?Integer.MAX_VALUE:(d[i][k] + d[k][j]);
                     if(d[i][j] > select){
-                        if(i == 1 && j == 6){
-                            System.out.println(1);
-                        }
                         d[i][j] = d[i][k] + d[k][j];
                         p[i][j] = p[i][k];
                     }
