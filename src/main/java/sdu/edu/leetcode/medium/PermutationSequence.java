@@ -1,5 +1,7 @@
 package sdu.edu.leetcode.medium;
 
+import sun.nio.ch.ThreadPool;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,6 +28,9 @@ public class PermutationSequence {
             k -= index * factorial[n - i];
         }
         return sb.toString();
+    }
 
+    public static void main(String[] args) {
+        new PermutationSequence().getPermutation(3, 3);
     }
 }
